@@ -1,0 +1,6 @@
+defillama2
+streamlit
+datetime
+pandas==1.4.3
+yfinance
+plotly
