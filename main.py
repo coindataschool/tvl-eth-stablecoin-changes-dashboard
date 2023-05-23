@@ -62,7 +62,7 @@ c1, c2 = st.columns(2)
 with c1:
     # user input 
     base_date_tvl = st.date_input(
-        "Start Date", date(2023, 1, 1), min_value=date(2018, 8, 16), 
+        "Start Date", date(2022, 1, 1), min_value=date(2018, 8, 16), 
         max_value=date.today()-pd.Timedelta(1, 'd'))
     
     # calc cumulative pct change from the base date
@@ -103,7 +103,7 @@ with c1:
 with c2:
     # user input
     base_date_stb = st.date_input(
-        "Start Date", date(2022, 1, 20), min_value=date(2020, 12, 31), 
+        "Start Date", date(2022, 1, 1), min_value=date(2020, 12, 31), 
         max_value=date.today()-pd.Timedelta(1, 'd'))
 
     # calc cumulative $ change from the base date
