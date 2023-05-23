@@ -67,7 +67,7 @@ with c1:
     
     # calc cumulative pct change from the base date
     df_pct_chng = df_eth_vs_tvl.loc[base_date_tvl:]\
-        .apply(lambda x: x.div(x.iloc[0]).subtract(1).mul(100))
+        .apply(lambda x: x.div(x.iloc[0]).subtract(1))
 
     # plot figure 1 
     fig1 = make_subplots() 
@@ -84,11 +84,12 @@ with c1:
                    name='BTC', line=dict(color='#F7931A', width=1.5))
     )
     # format the axes
-    fig1.update_yaxes(title_text=None, showgrid=False, linewidth=2, zeroline=False)
+    fig1.update_yaxes(title_text=None, showgrid=False, linewidth=2, 
+                      zeroline=False, tickformat=".0%")
     fig1.update_xaxes(title_text=None, showgrid=False, linewidth=2)
     # format layout
     fig1.update_layout(paper_bgcolor="#0E1117", plot_bgcolor='#0E1117', 
-        yaxis_tickprefix = '', yaxis_tickformat = ',.2f', 
+        yaxis_tickprefix = '', 
         legend=dict(orientation="h"),
         title_text='% Change - BTC & ETH vs. TVL',
         font=dict(size=18),
