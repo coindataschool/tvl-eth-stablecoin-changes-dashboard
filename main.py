@@ -165,6 +165,6 @@ with c4:
     st.markdown("- Follow me on github: [@coindataschool](https://github.com/coindataschool)")
 
     st.subheader("If you'd like to support my work, you can")
+    st.markdown("- Get one of these [membership tiers](https://ko-fi.com/coindataschool/tiers)")    
     st.markdown("- Send me ETH: `0x783c5546c863f65481bd05fd0e3fd5f26724604e`")
     st.markdown("- Tip me [sat](https://tippin.me/@coindataschool)")
-    st.markdown("- Get one of these [membership tiers](https://ko-fi.com/coindataschool/tiers)")
